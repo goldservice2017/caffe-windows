@@ -15,7 +15,7 @@ Check out the [project site](http://caffe.berkeleyvision.org) for all the detail
 and step-by-step examples.
 
 ## Windows Setup
-**Requirements**: Visual Studio 2015, CUDA 9.0, third party libraries: [Baidu Yun](https://pan.baidu.com/s/1ZTp8iWszMPrZ718w_UCZ5Q) or [Google Drive](https://drive.google.com/file/d/13dbvXmMosxozWbSgJdDdxH62YWqXLjoJ/view?usp=sharing). Please extract the archive into `./windows/thirdparty/`. Then, add the folder `./windows/thirdparty/bins` to the environment variable `PATH`.
+**Requirements**: Visual Studio 2015, CUDA 9.0, third party libraries: [Google Drive](https://drive.google.com/file/d/13dbvXmMosxozWbSgJdDdxH62YWqXLjoJ/view?usp=sharing). Please extract the archive into `./windows/thirdparty/`. Then, add the folder `./windows/thirdparty/bins` to the environment variable `PATH`.
 
 ### Pre-Build Steps
 Copy `.\windows\CommonSettings.props.example` to `.\windows\CommonSettings.props`
@@ -25,12 +25,12 @@ Both can be disabled by adjusting build variables in `.\windows\CommonSettings.p
 Python support is disabled by default, but can be enabled via `.\windows\CommonSettings.props` as well.
 
 ### CUDA
-Download `CUDA Toolkit 8.0` [from nVidia website](https://developer.nvidia.com/cuda-toolkit).
+Download `CUDA Toolkit 9.0` [from nVidia website](https://developer.nvidia.com/cuda-toolkit).
 If you don't have CUDA installed, you can experiment with CPU_ONLY build.
 In `.\windows\CommonSettings.props` set `CpuOnlyBuild` to `true` and set `UseCuDNN` & `UseNCCL` to `false`.
 
 ### cuDNN
-Download `cuDNN v5` [from nVidia website](https://developer.nvidia.com/cudnn).
+Download `cuDNN v7.0.5` [from nVidia website](https://developer.nvidia.com/cudnn).
 Unpack downloaded zip to %CUDA_PATH% (environment variable set by CUDA installer).
 Alternatively, you can unpack zip to any location and set `CuDnnPath` to point to this location in `.\windows\CommonSettings.props`.
 `CuDnnPath` defined in `.\windows\CommonSettings.props`.
